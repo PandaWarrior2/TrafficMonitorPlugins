@@ -1192,8 +1192,8 @@ public:
         case TMI_DESCRIPTION: return L"Weather from Open-Meteo.com: temperature, wind, humidity, pressure, and a forecast for today and tomorrow.";
         case TMI_AUTHOR: return L"Moonl1ght";
         case TMI_COPYRIGHT: return L"Data: Open-Meteo.com (CC BY 4.0)";
-        case TMI_VERSION: return L"1.2";
-        case TMI_URL: return L"https://open-meteo.com/";
+        case TMI_VERSION: return L"1.0";
+        case TMI_URL: return L"https://github.com/PandaWarrior2/TrafficMonitorPlugin";
         default: return L"";
         }
     }

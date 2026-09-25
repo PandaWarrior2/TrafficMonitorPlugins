@@ -561,8 +561,8 @@ public:
         case TMI_DESCRIPTION: return L"Remaining Claude subscription limits: the 5-hour window, the week, and the Fable week.";
         case TMI_AUTHOR: return L"Moonl1ght";
         case TMI_COPYRIGHT: return L"";
-        case TMI_VERSION: return L"1.2";
-        case TMI_URL: return L"";
+        case TMI_VERSION: return L"1.0";
+        case TMI_URL: return L"https://github.com/PandaWarrior2/TrafficMonitorPlugins";
         default: return L"";
         }
     }
