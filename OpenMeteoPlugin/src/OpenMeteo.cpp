@@ -1193,7 +1193,7 @@ public:
         case TMI_AUTHOR: return L"Moonl1ght";
         case TMI_COPYRIGHT: return L"Data: Open-Meteo.com (CC BY 4.0)";
         case TMI_VERSION: return L"1.0";
-        case TMI_URL: return L"https://github.com/PandaWarrior2/TrafficMonitorPlugin";
+        case TMI_URL: return L"https://github.com/PandaWarrior2/TrafficMonitorPlugins";
         default: return L"";
         }
     }
