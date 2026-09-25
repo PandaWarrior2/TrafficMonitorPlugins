@@ -1,0 +1,22 @@
+# Build output: OutDir/IntDir in the .vcxproj files, plus old DLLs moved aside by build.ps1 -Install
+# (bin/ also holds the .ini that SmokeTest writes next to itself)
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.aps
+*.VC.db
+*.VC.opendb
+ipch/
+
+# Build logs
+*.log
+*.binlog
+
+# OS and editors
+.vscode/
+Thumbs.db
+desktop.ini
+.DS_Store

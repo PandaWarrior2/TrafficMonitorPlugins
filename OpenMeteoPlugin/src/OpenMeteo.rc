@@ -1,0 +1,59 @@
+#pragma code_page(65001)
+#include <winres.h>
+#include "resource.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+IDD_OPTIONS DIALOGEX 0, 0, 270, 236
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open-Meteo — Settings"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "City", IDC_STATIC, 7, 4, 256, 124
+    EDITTEXT        IDC_QUERY, 15, 17, 185, 14, ES_AUTOHSCROLL
+    PUSHBUTTON      "Search", IDC_SEARCH, 205, 16, 50, 16
+    LISTBOX         IDC_RESULTS, 15, 36, 240, 58, LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP | WS_BORDER
+    LTEXT           "", IDC_STATUS, 15, 98, 240, 10
+    LTEXT           "", IDC_SELECTED, 15, 111, 240, 10
+
+    GROUPBOX        "Display", IDC_STATIC, 7, 132, 256, 74
+    LTEXT           "Temperature:", IDC_STATIC, 15, 148, 60, 10
+    COMBOBOX        IDC_TEMP_UNIT, 78, 146, 60, 60, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Wind:", IDC_STATIC, 15, 166, 60, 10
+    COMBOBOX        IDC_WIND_UNIT, 78, 164, 60, 60, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pressure:", IDC_STATIC, 15, 184, 60, 10
+    COMBOBOX        IDC_PRESSURE_UNIT, 78, 182, 60, 60, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Refresh:", IDC_STATIC, 150, 148, 40, 10
+    COMBOBOX        IDC_INTERVAL, 192, 146, 63, 80, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sky:", IDC_STATIC, 150, 166, 40, 10
+    COMBOBOX        IDC_CONDITION, 192, 164, 63, 60, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+
+    LTEXT           "Data: Open-Meteo.com (CC BY 4.0)", IDC_STATIC, 7, 216, 148, 10
+    DEFPUSHBUTTON   "OK", IDOK, 159, 213, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 213, 213, 50, 14
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Open-Meteo — weather for TrafficMonitor"
+            VALUE "FileVersion", "1.2.0.0"
+            VALUE "InternalName", "OpenMeteo"
+            VALUE "OriginalFilename", "OpenMeteo.dll"
+            VALUE "ProductName", "Open-Meteo"
+            VALUE "ProductVersion", "1.2.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
